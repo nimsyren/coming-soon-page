@@ -20,16 +20,60 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
   <link rel="stylesheet" href="css/styles.css?v=1.0">
-  <link rel="stylesheet" href="/html/styles.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Open-sans, Geneva, Tahoma, sans-serif;
+      font-size: 18px;
+      color: #000;
+    }
+    .background {
+      background-color: #fff;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+    .section, .header {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .section {
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .header {
+      padding: 40px;
+    }
+    h1 {
+      font-size: 4em;
+      line-height: 1.4em;
+      font-weight: 300;
+    }
+    p {
+      margin-top: 8px;
+      margin-bottom: 8px;
+      line-height: 1.4em;
+    }
+  </style>
 
 </head>
 
 <body>
   <div class="background">
-    <h1>Coming soon...</h1>
-
+    <div class="header">
+      <img class="logo" src="codesign.png" alt="logo" width="200" height="100" />
+    </div>
+    <div class="section">
+      <img class="image" src="computer.jpg" alt="image" width="400" height="400" />
+      <h1>Coming soon...</h1>
+      <p>Утас: 72112121</p>
+      <p>И-мэйл: info@codesign.mn</p>
+    </div>
   </div>
-  <div class="footer"></div>
 </body>
 
 </html>
