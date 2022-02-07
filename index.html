@@ -1,102 +1,230 @@
 <!DOCTYPE html>
-
-<html lang="en">
+<html class="no-js" lang="en">
   <head>
     <meta charset="utf-8" />
+    <title>Codesign</title>
+    <meta name="description" content="Delivery landing page" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Codesign</title>
-    <meta name="description" content="Coming soon page." />
-    <meta name="author" content="Codesign" />
-
-    <link rel="icon" type="image/png" href="favicon.png" />
-
-    <meta property="og:title" content="Coming soon page" />
+    <meta property="og:title" content="Delivery landing page" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://codesign.mn/" />
-    <meta property="og:description" content="Coming soon page." />
     <meta property="og:image" content="favicon.png" />
 
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        font-family: Open-sans, Geneva, Tahoma, sans-serif;
-        font-size: 18px;
-        color: #000;
-      }
-      .background {
-        background-color: #fff;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        overflow-y: hidden;
-      }
-      .section,
-      .header {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        box-sizing: border-box;
-      }
-      .section {
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
-      }
-      .header {
-        padding: 40px;
-      }
-      h1 {
-        font-size: 4em;
-        line-height: 1.4em;
-        font-weight: 300;
-      }
-      p {
-        margin-top: 8px;
-        margin-bottom: 8px;
-        line-height: 1.4em;
-      }
-      .image {
-        max-width: 100%;
-      }
-      @media only screen and (max-width: 768px) {
-        .header {
-          padding: 10px 0px 10px 0px;
-        }
-        h1 {
-          font-size: 2em;
-          padding-left: 10px;
-          padding-left: 10px;
-        }
-      }
-    </style>
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="apple-touch-icon" href="favicon.png" />
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="icon" type="image/png" href="favicon.png" />
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <meta name="theme-color" content="#fafafa" />
   </head>
 
   <body>
-    <div class="background">
-      <div class="header">
-        <img
-          class="logo"
-          src="codesign.png"
-          alt="logo"
-          width="200"
-          height="100"
-        />
+    <!-- Add your site or application content here -->
+    <div class="header bg">
+      <div class="topbar container">
+        <div class="logo">
+          <img src="img/codesign.png" alt="logo" width="120" height="60" />
+        </div>
+        <div class="contact">
+          <p>Утас: 72112121</p>
+          <p>И-мэйл: info@codesign.mn</p>
+        </div>
       </div>
-      <div class="section">
-        <img
-          class="image"
-          src="computer.jpg"
-          alt="image"
-          width="400"
-          height="400"
-        />
-        <h1>Coming soon...</h1>
-        <p>Утас: 7211-2121</p>
+      <div class="container slider">
+        <div class="slider-text">
+          <p class="title">Хүргэлтийн систем</p>
+          <p class="subtitle">
+            Захиалгын барааг байгаа газраас нь аван хэрэглэгчид хүргэж өгөх,
+            хаана байгааг хянах хүргэлтийн системийн түрээсийн үйлчилгээг үзүүлж
+            байна.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="column left">
+          <div class="box">
+            <p class="title">Бараагаа хаана байгааг хянах</p>
+            <p class="subtitle">
+              Захиалагч болон худалдаалагч аль аль тал нь бараагаа хаана явааг
+              хялбар хянах боломжийг бүрдүүлсэн.
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="box">
+            <img
+              class="image"
+              src="img/map.png"
+              alt="image"
+              width="200"
+              height="400"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section bg">
+      <div class="container">
+        <div class="column">
+          <div class="box">
+            <img
+              class="image"
+              src="img/qrcode.png"
+              alt="image"
+              width="200"
+              height="400"
+            />
+          </div>
+        </div>
+        <div class="column right">
+          <div class="box">
+            <p class="title">Жолоочийн хүргэлтийн апп</p>
+            <p class="subtitle">
+              Хүргэлтийн жолооч бүр QR код суурьтай гар утасны апп ашиглан
+              хурдан шуурхай, алдаагүй хүргэлт хийх боломжтой
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="column left">
+          <div class="box">
+            <p class="title">Татан авалт хийх</p>
+            <p class="subtitle">
+              Худалдаалагч тал хүргэлтийн компанид татан авалт хийх захиалга
+              өгөх боломжтой.
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="box">
+            <img
+              class="image"
+              src="img/plus.png"
+              alt="image"
+              width="200"
+              height="400"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section bg">
+      <div class="container">
+        <div class="column">
+          <div class="box">
+            <img
+              class="image"
+              src="img/report.png"
+              alt="logo"
+              width="200"
+              height="400"
+            />
+          </div>
+        </div>
+        <div class="column right">
+          <div class="box">
+            <p class="title">Тайлан</p>
+            <p class="subtitle">
+              Нийт хүргэлтийг жолооч, захиалагчаар гаргаж, хянах боломжтой.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <p class="title">Үйлчилгээний түрээсийн үнийн санал</p>
+        <div class="price-container">
+          <div class="column">
+            <div class="price-box">
+              <div class="price-header">
+                <p class="price-title">Энгийн багц</p>
+              </div>
+              <div class="price-body">
+                <div class="price-descr">
+                  <p class="price-main">200,000</p>
+                  <p class="price-secondary">/сар</p>
+                </div>
+                <div class="price-descr">
+                  <p class="price-main">175,000</p>
+                  <p class="price-secondary">/хагас жил</p>
+                </div>
+                <div class="price-descr">
+                  <p class="price-main">150,000</p>
+                  <p class="price-secondary">/жил</p>
+                </div>
+              </div>
+              <div class="price-footer">
+                <ul class="price-list">
+                  <li>1-9 жолооч</li>
+                  <li>Хүргэлтийн тоо хязгааргүй</li>
+                  <li>Хүргэлтийн тайлан</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="price-box">
+              <div class="price-header">
+                <p class="price-title">Хязгааргүй багц</p>
+              </div>
+              <div class="price-body">
+                <div class="price-descr">
+                  <p class="price-main">400,000</p>
+                  <p class="price-secondary">/сар</p>
+                </div>
+                <div class="price-descr">
+                  <p class="price-main">350,000</p>
+                  <p class="price-secondary">/хагас жил</p>
+                </div>
+                <div class="price-descr">
+                  <p class="price-main">300,000</p>
+                  <p class="price-secondary">/жил</p>
+                </div>
+              </div>
+              <div class="price-descr">
+                <ul class="price-list">
+                  <li>10-с дээш жолооч</li>
+                  <li>Хүргэлтийн тоо хязгааргүй</li>
+                  <li>Хүргэлтийн тайлан</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <p class="margin-right">Утас: 72112121</p>
         <p>И-мэйл: info@codesign.mn</p>
       </div>
     </div>
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function () {
+        ga.q.push(arguments);
+      };
+      ga.q = [];
+      ga.l = +new Date();
+      ga("create", "UA-XXXXX-Y", "auto");
+      ga("set", "anonymizeIp", true);
+      ga("set", "transport", "beacon");
+      ga("send", "pageview");
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
   </body>
 </html>
