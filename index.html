@@ -17,6 +17,8 @@
     <meta property="og:description" content="Coming soon page." />
     <meta property="og:image" content="favicon.png" />
 
+    <link rel="stylesheet" href="delivery/css/normalize.css" />
+
     <style>
       body {
         margin: 0;
@@ -45,9 +47,6 @@
         flex-direction: column;
         text-align: center;
       }
-      .header {
-        padding: 40px;
-      }
       h1 {
         font-size: 4em;
         line-height: 1.4em;
@@ -58,13 +57,16 @@
         margin-bottom: 8px;
         line-height: 1.4em;
       }
+      .logo {
+        max-width: 1000px;
+        width: 100%;
+        padding-top: 10px;
+        margin: 0 auto;
+      }
       .image {
         max-width: 100%;
       }
       @media only screen and (max-width: 768px) {
-        .header {
-          padding: 10px 0px 10px 0px;
-        }
         h1 {
           font-size: 2em;
           padding-left: 10px;
@@ -76,45 +78,11 @@
 
   <body>
     <div class="background">
-      <div class="header">
-        <div class="logo">
-          <img src="codesign.png" alt="logo" width="200" height="100" />
-        </div>
-        <div class="slider">
-          <h1>Хүргэлтийн систем</h1>
-          <p>
-            Захиалгын барааг байгаа газраас нь аван хэрэглэгчид хүргэж өгөх,
-            хаана байгааг хянах хүргэлтийн системийн түрээсийн үйлчилгээг үзүүлж
-            байна.
-          </p>
-        </div>
+      <div class="logo">
+        <img src="codesign.png" alt="logo" width="200" height="100" />
       </div>
       <div class="section">
-        <div class="info-box">
-          <h1>Бараагаа хаана байгааг хянах</h1>
-          <p>
-            Захиалагч болон худалдаалагч аль аль тал нь бараагаа хаана явааг
-            хялбар хянах боломжийг бүрдүүлсэн.
-          </p>
-        </div>
-        <div class="info-box">
-          <h1>Жолоочийн хүргэлтийн апп</h1>
-          <p>
-            Хүргэлтийн жолооч бүр QR код суурьтай гар утасны апп ашиглан хурдан
-            шуурхай, алдаагүй хүргэлт хийх боломжтой
-          </p>
-        </div>
-        <div class="info-box">
-          <h1>Татан авалт хийх</h1>
-          <p>
-            Худалдаалагч тал хүргэлтийн компанид татан авалт хийх захиалга өгөх
-            боломжтой.
-          </p>
-        </div>
-        <div class="info-box">
-          <h1>Тайлан</h1>
-          <p>Нийт хүргэлтийг жолооч, захиалагчаар гаргаж, хянах боломжтой.</p>
-        </div>
+        <img src="computer.jpg" alt="image" width="400" height="400" />
       </div>
       <div class="section">
         <h1>Coming soon...</h1>
