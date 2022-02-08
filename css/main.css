@@ -444,6 +444,13 @@ image {
   max-width: 100%;
 }
 
+.flex-box {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
 @media (min-width: 1280px) {
   .container {
     max-width: 1000px;
