@@ -156,65 +156,149 @@
     <div class="section">
       <div class="container">
         <p class="title">Үйлчилгээний түрээсийн үнийн санал</p>
-        <div class="price-container">
-          <div class="column">
-            <div class="price-box">
-              <div class="price-header">
-                <p class="price-title">Энгийн багц</p>
-                <div><p class="price-secondary">(1 сарын төлбөр)</p></div>
-              </div>
-              <div class="price-body">
-                <div class="price-descr">
-                  <p class="price-main">200,000₮</p>
-                  <p class="price-secondary">/сараар төлбөл</p>
-                </div>
-                <div class="price-descr">
-                  <p class="price-main">175,000₮</p>
-                  <p class="price-secondary">/хагас жилээр төлбөл</p>
-                </div>
-                <div class="price-descr">
-                  <p class="price-main">150,000₮</p>
-                  <p class="price-secondary">/жилээр төлбөл</p>
-                </div>
-              </div>
-              <div class="price-footer">
-                <ul class="price-list">
-                  <li>1-9 жолооч</li>
-                  <li>Хүргэлтийн тоо хязгааргүй</li>
-                  <li>Хүргэлтийн тайлан</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="column">
-            <div class="price-box">
-              <div class="price-header">
-                <p class="price-title">Ахисан багц</p>
-                <div><p class="price-secondary">(1 сарын төлбөр)</p></div>
-              </div>
-              <div class="price-body">
-                <div class="price-descr">
-                  <p class="price-main">400,000₮</p>
-                  <p class="price-secondary">/сараар төлбөл</p>
-                </div>
-                <div class="price-descr">
-                  <p class="price-main">350,000₮</p>
-                  <p class="price-secondary">/хагас жилээр төлбөл</p>
-                </div>
-                <div class="price-descr">
-                  <p class="price-main">300,000₮</p>
-                  <p class="price-secondary">/жилээр төлбөл</p>
+
+        <div id="price-tabs">
+          <input id="tab1" type="radio" name="tabs" checked />
+          <label for="tab1">1 сараар төлбөл</label>
+
+          <input id="tab2" type="radio" name="tabs" />
+          <label for="tab2">6 сараар төлбөл</label>
+
+          <input id="tab3" type="radio" name="tabs" />
+          <label for="tab3">12 сараар төлбөл</label>
+
+          <section id="content1">
+            <div class="container">
+              <div class="column">
+                <div class="price-box">
+                  <div class="price-header">
+                    <p class="price-title">Энгийн багц</p>
+                  </div>
+                  <div class="price-body">
+                    <div class="price-descr">
+                      <p class="price-main">200,000₮</p>
+                      <p class="price-secondary">/сар</p>
+                    </div>
+                  </div>
+                  <div class="price-footer">
+                    <ul class="price-list">
+                      <li>1-9 жолооч</li>
+                      <li>Хүргэлтийн тоо хязгааргүй</li>
+                      <li>Хүргэлтийн тайлан</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-              <div class="price-descr">
-                <ul class="price-list">
-                  <li>10-с дээш жолооч</li>
-                  <li>Хүргэлтийн тоо хязгааргүй</li>
-                  <li>Хүргэлтийн тайлан</li>
-                </ul>
+              <div class="column">
+                <div class="price-box">
+                  <div class="price-header">
+                    <p class="price-title">Ахисан багц</p>
+                  </div>
+                  <div class="price-body">
+                    <div class="price-descr">
+                      <p class="price-main">400,000₮</p>
+                      <p class="price-secondary">/сар</p>
+                    </div>
+                  </div>
+                  <div class="price-descr">
+                    <ul class="price-list">
+                      <li>10-с дээш жолооч</li>
+                      <li>Хүргэлтийн тоо хязгааргүй</li>
+                      <li>Хүргэлтийн тайлан</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
+          </section>
+
+          <section id="content2">
+            <div class="container">
+              <div class="column">
+                <div class="price-box">
+                  <div class="price-header">
+                    <p class="price-title">Энгийн багц</p>
+                  </div>
+                  <div class="price-body">
+                    <div class="price-descr">
+                      <p class="price-main">175,000₮</p>
+                      <p class="price-secondary">/сар</p>
+                    </div>
+                  </div>
+                  <div class="price-footer">
+                    <ul class="price-list">
+                      <li>1-9 жолооч</li>
+                      <li>Хүргэлтийн тоо хязгааргүй</li>
+                      <li>Хүргэлтийн тайлан</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="price-box">
+                  <div class="price-header">
+                    <p class="price-title">Ахисан багц</p>
+                  </div>
+                  <div class="price-body">
+                    <div class="price-descr">
+                      <p class="price-main">350,000₮</p>
+                      <p class="price-secondary">/сар</p>
+                    </div>
+                  </div>
+                  <div class="price-descr">
+                    <ul class="price-list">
+                      <li>10-с дээш жолооч</li>
+                      <li>Хүргэлтийн тоо хязгааргүй</li>
+                      <li>Хүргэлтийн тайлан</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="content3">
+            <div class="container">
+              <div class="column">
+                <div class="price-box">
+                  <div class="price-header">
+                    <p class="price-title">Энгийн багц</p>
+                  </div>
+                  <div class="price-body">
+                    <p class="price-main">150,000₮</p>
+                    <p class="price-secondary">/сар</p>
+                  </div>
+                  <div class="price-footer">
+                    <ul class="price-list">
+                      <li>1-9 жолооч</li>
+                      <li>Хүргэлтийн тоо хязгааргүй</li>
+                      <li>Хүргэлтийн тайлан</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="price-box">
+                  <div class="price-header">
+                    <p class="price-title">Ахисан багц</p>
+                  </div>
+                  <div class="price-body">
+                    <div class="price-descr">
+                      <p class="price-main">300,000₮</p>
+                      <p class="price-secondary">/сар</p>
+                    </div>
+                  </div>
+                  <div class="price-descr">
+                    <ul class="price-list">
+                      <li>10-с дээш жолооч</li>
+                      <li>Хүргэлтийн тоо хязгааргүй</li>
+                      <li>Хүргэлтийн тайлан</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
     </div>

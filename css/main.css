@@ -278,10 +278,10 @@ textarea {
 /* ==========================================================================
    Base styles
    ========================================================================== */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
 
 body {
-  font-family: "Open-sans", "Geneva", "Tahoma", "sans-serif";
-  font-size: 14px;
+  font: 14px/1 "Open Sans", sans-serif;
   color: #333;
   background-color: #f9f9f9;
 }
@@ -384,12 +384,6 @@ p {
   display: flex;
 }
 
-.price-container {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-}
-
 .price-box {
   margin: 15px;
   border-radius: 10px;
@@ -414,10 +408,12 @@ p {
   font-size: 2em;
   font-weight: 500;
   font-weight: 700;
+  display: inline;
 }
 
 .price-secondary {
   font-size: 1.25em;
+  display: inline;
 }
 
 .price-descr {
@@ -448,17 +444,11 @@ image {
   .container {
     max-width: 1000px;
   }
-  .price-container {
-    max-width: 80%;
-  }
 }
 
 @media (max-width: 1280px) {
   .container {
     max-width: 970px;
-  }
-  .price-container {
-    max-width: 80%;
   }
 }
 
@@ -471,17 +461,13 @@ image {
     max-width: 100%;
     flex-basis: 100%;
   }
-  .price-container {
-    max-width: 80%;
-  }
 }
 
 @media (max-width: 768px) {
-  .container,
-  .price-container {
+  .container {
     max-width: 100%;
   }
-  .price-container,
+
   .container {
     flex-direction: column;
   }
@@ -508,6 +494,73 @@ image {
   }
 }
 
-.price-container p {
-  display: inline;
+/* ==========================================================================
+   tabs styles
+   ========================================================================== */
+
+#price-tabs h1 {
+  padding: 50px 0;
+  font-weight: 400;
+  text-align: center;
+}
+
+#price-tabs p {
+  margin: 0 0 20px;
+  line-height: 1.5;
+}
+
+#price-tabs section {
+  display: none;
+  padding: 20px 0 0;
+  border-top: 1px solid #ddd;
+}
+
+#price-tabs input {
+  display: none;
+}
+
+#price-tabs label {
+  display: inline-block;
+  margin: 0 0 -1px;
+  padding: 15px 25px;
+  font-weight: 600;
+  text-align: center;
+  color: #888;
+  border: 1px solid transparent;
+}
+
+#price-tabs label:hover {
+  color: #555;
+  cursor: pointer;
+}
+
+#price-tabs input:checked + label {
+  color: #333;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-top: 3px solid #01ada4;
+  border-bottom: 1px solid #fff;
+}
+
+#price-tabs #tab1:checked ~ #content1,
+#price-tabs #tab2:checked ~ #content2,
+#price-tabs #tab3:checked ~ #content3 {
+  display: block;
+}
+
+@media screen and (max-width: 650px) {
+  #price-tabs label {
+    display: block;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+  }
+  #price-tabs input:checked + label {
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid #ddd;
+  }
+  #price-tabs section {
+    border-top: 0;
+  }
 }
